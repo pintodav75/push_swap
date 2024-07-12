@@ -6,7 +6,7 @@
 /*   By: dpinto <dpinto@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/07 19:48:54 by dpinto            #+#    #+#             */
-/*   Updated: 2024/07/08 02:19:10 by dpinto           ###   ########.fr       */
+/*   Updated: 2024/07/13 00:02:16 by dpinto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,10 +28,10 @@ int	max(int a, int b)
 
 int	get_target(t_lst **head_a, int n)
 {
-	int		diff;
-	int		curr_diff;
-	int		target;
-	t_lst	*ptr;
+	long long int	diff;
+	long long int	curr_diff;
+	int				target;
+	t_lst			*ptr;
 
 	diff = -1;
 	target = -1;
@@ -40,7 +40,7 @@ int	get_target(t_lst **head_a, int n)
 	{
 		if (ptr->n > n)
 		{
-			curr_diff = abs(ptr->n - n);
+			curr_diff = ft_abs((long long)ptr->n - (long long)n);
 			if (diff == -1 || curr_diff < diff)
 			{
 				diff = curr_diff;
@@ -50,7 +50,7 @@ int	get_target(t_lst **head_a, int n)
 		ptr = ptr->next;
 	}
 	if (diff == -1)
-		return (ft_lst_get_min(*head_a, &diff));
+		return (ft_lst_get_min(*head_a, &target));
 	return (target);
 }
 

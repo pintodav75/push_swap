@@ -6,11 +6,11 @@
 /*   By: dpinto <dpinto@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/08 02:18:29 by dpinto            #+#    #+#             */
-/*   Updated: 2024/07/08 02:19:28 by dpinto           ###   ########.fr       */
+/*   Updated: 2024/07/12 23:57:53 by dpinto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	abs(int a)
+long long int	ft_abs(long long int a)
 {
 	if (a < 0)
 		return (-a);

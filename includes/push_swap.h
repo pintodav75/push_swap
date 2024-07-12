@@ -6,7 +6,7 @@
 /*   By: dpinto <dpinto@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/28 01:42:57 by dpinto            #+#    #+#             */
-/*   Updated: 2024/07/09 00:06:06 by dpinto           ###   ########.fr       */
+/*   Updated: 2024/07/13 00:58:26 by dpinto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ int					compute(t_lst **head_a, t_lst **head_b);
 int					get_position(t_lst *head, int n);
 void				get_cheapest_cost_n(t_lst **head_a, t_lst **head_b,
 						t_score *score);
-int					abs(int a);
+long long int		ft_abs(long long int a);
 char				**dup_map(char **map);
 char				**free_strs(char **strs);
 size_t				get_tab_len(char **tab);

@@ -1,5 +1,5 @@
 #!/usr/bin/bash
 
-ARGS=`seq -249 250 | shuf`;
+ARGS=`seq -250 249 | shuf`;
 ./push_swap $ARGS | ./checker_linux $ARGS
 
