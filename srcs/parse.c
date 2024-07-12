@@ -6,7 +6,7 @@
 /*   By: dpinto <dpinto@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/28 03:40:13 by dpinto            #+#    #+#             */
-/*   Updated: 2024/07/09 00:05:03 by dpinto           ###   ########.fr       */
+/*   Updated: 2024/07/12 04:15:59 by dpinto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int	check_doublon(char *str, char **av, int index)
 	i = 0;
 	while (i < index)
 	{
-		if (ft_strcmp(str, av[i]) == 0)
+		if (ft_atoi(str) == ft_atoi(av[i]))
 			return (1);
 		i++;
 	}
@@ -70,7 +70,7 @@ int	ft_str_isdigit(char *str)
 		return (1);
 	if (*str == '-')
 		i++;
-	if (str[i] == '\0' || str[i] == '0')
+	if (str[i] == '\0')
 		return (0);
 	while (str[i] != '\0')
 	{
